@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-head">
+      <div class="menu">
+        <span class="material-symbols-outlined">
+          menu
+        </span>
+      </div>
+      <div class="info">
+        <div class="search-bar">
+          <label for="search">
+            <span class="material-symbols-outlined">
+              search
+            </span>
+          </label>
+          <input type="text" placeholder="search" name="search" id="search">
+        </div>
+        <div class="profile">
+          <span class="material-symbols-outlined">
+            notifications
+          </span>
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="profile" width="25px">
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div>
+        <p class="sub-msg">Overview</p>
+        <h2 class="msg">Welcome back, Sambath!</h2>
+      </div>
+      <div class="main-container">
+        <!-- balance box -->
+        <div class="balance-box" style="grid-area: balance-box;">
+          <div class="text">
+            <h4 style="margin-bottom: 10px;">Balance</h4>
+            <p style="cursor: pointer;">></p>
+          </div>
+          <div class="graph">
+            <div class="data">
+              <p style="color: var(--text-secondary); margin-bottom: 5px;">total balance</p>
+              <h2>$12,450</h2>
+            </div>
+            <svg viewBox="0 0 500 150" class="line-svg" width="200px">
+              <!-- Glowing/Gradient background path -->
+              <path d="M0,120 Q120,40 250,80 T500,20 L500,150 L0,150 Z" fill="rgba(0, 188, 212, 0.15)" />
+              <!-- The line itself -->
+              <path d="M0,120 Q120,40 250,80 T500,20" fill="none" stroke="#00bcd4" stroke-width="3" />
+            </svg>
+          </div>
+        </div>
+        <!-- end -->
+        <!-- Sales box -->
+        <div class="balance-box" style="grid-area: sales;">
+          <div class="info">
+            <p>Sales</p>
+            <p>+42%</p>
+          </div>
+          <div class="graph">
+            <h2>$3240</h2>
+            <svg viewBox="0 0 500 150" class="line-svg" max-width="100px">
+              <!-- Glowing/Gradient background path -->
+              <path d="M0,120 Q120,40 250,80 T500,20 L500,150 L0,150 Z" fill="rgba(0, 188, 212, 0.15)" />
+              <!-- The line itself -->
+              <path d="M0,120 Q120,40 250,80 T500,20" fill="none" stroke="#00bcd4" stroke-width="3" />
+            </svg>
+          </div>
+        </div>
+        <!-- end -->
+        <!-- active users -->
+        <div class="balance-box">
+          <div class="info">
+            <p>Active Users</p>
+            <p>+5%</p>
+          </div>
+          <div class="graph" style="grid-area: active-users;">
+            <h2>1842</h2>
+            <svg viewBox="0 0 500 150" class="line-svg" max-width="100px">
+              <!-- Glowing/Gradient background path -->
+              <path d="M0,120 Q120,40 250,80 T500,20 L500,150 L0,150 Z" fill="rgba(0, 188, 212, 0.15)" />
+              <!-- The line itself -->
+              <path d="M0,120 Q120,40 250,80 T500,20" fill="none" stroke="#00bcd4" stroke-width="3" />
+            </svg>
+          </div>
+        </div>
+        <!-- end -->
+        <!-- weekly activity -->
+        <div class="chart-card" style="grid-area: weekly-activity;">
+          <h2 class="chart-title">Weekly Activity</h2>
+          <div class="chart-body">
+            <!-- Y-Axis Labels -->
+            <div class="y-axis">
+              <span>100</span>
+              <span>75</span>
+              <span>50</span>
+              <span>25</span>
+              <span>0</span>
+            </div>
+            <!-- Plot Area -->
+            <div class="plot-area">
+              <!-- Horizontal Grid Lines -->
+              <div class="grid-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <!-- Grouped Vertical Bars -->
+              <div class="bars-container">
+                <!-- X -->
+                <div class="bar-group">
+                  <div class="two-bar">
+                    <div class="bar bar-blue" style="height: 19%;"></div>
+                    <div class="bar bar-green" style="height: 11%;"></div>
+                  </div>
+                  <div>X</div>
+                </div>
+                <!-- Mst -->
+                <div class="bar-group">
+                  <div class="two-bar">
+                    <div class="bar bar-blue" style="height: 36%;"></div>
+                    <div class="bar bar-green" style="height: 15%;"></div>
+                  </div>
+                  <div>Mst</div>
+                </div>
+                <!-- May -->
+                <div class="bar-group">
+                  <div class="two-bar">
+                    <div class="bar bar-blue" style="height: 43%;"></div>
+                    <div class="bar bar-green" style="height: 61%;"></div>
+                  </div>
+                  <div>May</div>
+                </div>
+                <!-- Mov -->
+                <div class="bar-group">
+                  <div class="two-bar">
+                    <div class="bar bar-blue" style="height: 55%;"></div>
+                    <div class="bar bar-green" style="height: 37%;"></div>
+                  </div>
+                  <div>Mov</div>
+                </div>
+                <!-- Jug -->
+                <div class="bar-group">
+                  <div class="two-bar">
+                    <div class="bar bar-blue" style="height: 64%;"></div>
+                    <div class="bar bar-green" style="height: 25%;"></div>
+                  </div>
+                  <div>Jug</div>
+                </div>
+                <!-- Sep -->
+                <div class="bar-group">
+                  <div class="two-bar">
+                    <div class="bar bar-blue" style="height: 49%;"></div>
+                    <div class="bar bar-green" style="height: 24%;"></div>
+                  </div>
+                  <div>Sep</div>
+                </div>
+                <!-- Oct -->
+                <div class="bar-group">
+                  <div class="two-bar">
+                    <div class="bar bar-blue" style="height: 50%;"></div>
+                    <div class="bar bar-green" style="height: 30%;"></div>
+                  </div>
+                  <div>Oct</div>
+                </div>
+                <!-- Dec -->
+                <div class="bar-group">
+                  <div class="two-bar">
+                    <div class="bar bar-blue" style="height: 70%;"></div>
+                    <div class="bar bar-green" style="height: 39%;"></div>
+                  </div>
+                  <div>Dec</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end -->
+        <!-- transaction -->
+        <div class="transaction-container" style="grid-area: transaction;">
+          <h3>Recent Transaction</h3>
+          <ul class="transaction">
+            <li class="item">
+              <section>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsjMPhzycA6XGNEEq-oqsGAvq-1q6HUCDwScmMBfoVwg&s=10" alt="paypal logo" width="30" height="30">
+                <p>Paypal - <span style="color: lightgreen;">Received</span></p>
+              </section>
+              <div class="amount">
+                $150.00
+              </div>
+            </li>
+            <li class="item">
+              <section>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJGDUUji1aiQIdgCKO4tOpE9ZOPasOgXdYh3TUgbs8A&s=10" alt="aba logo" width="30" height="30">
+                <p>Aba - <span style="color: red;">Sent</span></p>
+              </section>
+              <div class="amount">
+                $40.00
+              </div>
+            </li>
+            <li class="item">
+              <section>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJGDUUji1aiQIdgCKO4tOpE9ZOPasOgXdYh3TUgbs8A&s=10" alt="aba logo" width="30" height="30">
+                <p>Aba - <span style="color: red;">Sent</span></p>
+              </section>
+              <div class="amount">
+                $40.00
+              </div>
+            </li>
+            <li class="item">
+              <section>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZJGDUUji1aiQIdgCKO4tOpE9ZOPasOgXdYh3TUgbs8A&s=10" alt="aba logo" width="30" height="30">
+                <p>Aba - <span style="color: red;">Sent</span></p>
+              </section>
+              <div class="amount">
+                $40.00
+              </div>
+            </li>
+            <li class="item">
+              <section>
+                <img src="https://cdn.pixabay.com/photo/2021/04/30/16/47/bnb-6219388_1280.png" alt="binance logo" width="30" height="30">
+                <p>Binance - <span style="color: lightgreen;">Received</span></p>
+              </section>
+              <div class="amount">
+                $1500.00
+              </div>
+            </li>
+            <li class="item">
+              <section>
+                <img src="https://cdn.pixabay.com/photo/2021/04/30/16/47/bnb-6219388_1280.png" alt="binance logo" width="30" height="30">
+                <p>Binance - <span style="color: lightgreen;">Received</span></p>
+              </section>
+              <div class="amount">
+                $1500.00
+              </div>
+            </li>
+            <li class="item">
+              <section>
+                <img src="https://cdn.pixabay.com/photo/2021/04/30/16/47/bnb-6219388_1280.png" alt="binance logo" width="30" height="30">
+                <p>Binance - <span style="color: lightgreen;">Received</span></p>
+              </section>
+              <div class="amount">
+                $1500.00
+              </div>
+            </li>
+            <li class="item">
+              <section>
+                <img src="https://cdn.pixabay.com/photo/2021/04/30/16/47/bnb-6219388_1280.png" alt="binance logo" width="30" height="30">
+                <p>Binance - <span style="color: lightgreen;">Received</span></p>
+              </section>
+              <div class="amount">
+                $1500.00
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end -->
+      </div>
+    </main>
+    <!-- pages -->
+    <div class="pages-container">
+      <div class="app-logo">
+        <img src="https://png.pngtree.com/element_our/png/20180912/f-logo-business-symbols-vector-template-letter-png_91698.jpg" alt="fintect logo" width="30px" height="30px">
+        <h2>Fin<span>tect</span></h2>
+      </div>
+      <ul class="pages">
+        <li>
+          <a href="#" class="page">
+            <span class="material-symbols-outlined">
+              home
+            </span>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#" class="page">
+            <span class="material-symbols-outlined">
+              bar_chart
+            </span>
+            Analytics
+          </a>
+        </li>
+        <li>
+          <a href="#" class="page">
+            <span class="material-symbols-outlined">
+              sms
+            </span>
+            Message
+          </a>
+        </li>
+        <li>
+          <a href="#" class="page">
+            <span class="material-symbols-outlined">
+              settings
+            </span>
+            Settings
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- end -->
+</body>
+</html>
